@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>login</title>
+  <link rel="stylesheet" href="{% static 'login/css/style.css' %}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Navbar</title>
+	<link rel="stylesheet" type="text/css" href="slide navbar style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	</body>
+	<div class="cotn_principal">
+		<br>
+		<div class="cont_logo"><img src="{% static 'login/img/logo-dark.png' %}" width="30%" height="20%"/></div>
+		<div class="cont_centrar">
+	  
+		  <div class="cont_login" style="left: 60%;">
+			<div class="cont_info_log_sign_up">
+			  <div class="col_md_login">
+				<div class="cont_ba_opcitiy">				  
+				  <button class="btn_login" onclick="cambiar_login()" style="font-size: large;">Login</button>				  
+				</div>
+			  </div>			 
+			</div>
+			<div class="cont_forms">
+			  <div class="cont_img_back_">
+				<img src="{% static 'login/img/yale-assure-sl-hand-1500x1000.jpg' %}"/>
+			  </div>
+			
+
+              <form action="/login_form_submission" method="POST">	
+				  {% csrf_token %}	
+			  <div class="cont_form_login">
+				  
+				<!--<a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>-->
+				<h2>LOGIN</h2>
+				<input type="text" name="user_name" placeholder="user name" />
+				<input type="password" name="password" placeholder="Password" />
+				<a href="/resetpassword" style="color: rgb(75, 50, 12);" ><b>Forget Password?</b></a>
+				<a href="/register" style= "color: rgb(75, 50, 12);" ><b>dont have an account?</b></a>
+				<a href="/index"><button type="submit" class="btn_login" onclick="cambiar_login()">LOGIN</button></a>
+			  </div>
+			  </form>	        
+			  <div class="cont_form_sign_up"></div>
+			  
+			</div>
+	  
+		  </div>
+		</div>
+	  </div>
+</body>
+</html>
+
+<script>
+	function cambiar_login() {
+		document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_login";  
+	  document.querySelector('.cont_form_login').style.display = "block";
+	  document.querySelector('.cont_form_sign_up').style.opacity = "0";               
+	  
+	  setTimeout(function(){  document.querySelector('.cont_form_login').style.opacity = "1"; },400);  
+		
+	  setTimeout(function(){    
+	  document.querySelector('.cont_form_sign_up').style.display = "none";
+	  },200);  
+		}
+	  
+	  function cambiar_sign_up(at) {
+		document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_sign_up";
+		document.querySelector('.cont_form_sign_up').style.display = "block";
+	  document.querySelector('.cont_form_login').style.opacity = "0";
+		
+	  setTimeout(function(){  document.querySelector('.cont_form_sign_up').style.opacity = "1";
+	  },100);  
+	  
+	  setTimeout(function(){   document.querySelector('.cont_form_login').style.display = "none";
+	  },400);  
+	  
+	  
+	  }    
+	  	  
+	  
+	 </script> 
+	  
+	  
+<!-- partial -->
+  
+</body>
+</html>

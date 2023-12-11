@@ -1,0 +1,15 @@
+if reg_table.objects.filter(email_id=request['email_id']).exists():
+            messages.error('This user_name is already taken...!!',extra_tags="Taken")
+            return render(request,'register_form.html')
+        else:    
+            ex1=reg_table(email_id=request.POST.get('email_id'),
+            user_name=request.POST.get('user_name'),                          
+            password=request.POST.get('password'),
+            confirm_password=request.POST.get('confirm_password'))
+        ex1.save()
+        messages.error(request,'sucessfully registered..!!!',extra_tags="register")
+        print("inside")
+        return render(request,'login_form.html')
+    else:
+        print("outside")
+        return render(request,'register_form.html')

@@ -1,0 +1,631 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>INVENTOS</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'landing/css/bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{% static 'landing/css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'landing/css/responsive.css' %}" rel="stylesheet" />
+   <!--HEADING STYLE-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Neuton:ital@1&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet">
+   <style>
+       .hed{
+           
+           font-family: 'Neuton', serif;
+           
+          
+           color: rgb(5, 5, 5);
+       }
+       .con{
+        font-family: 'Abhaya Libre', serif;
+       }
+   </style>
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="/index">
+            <span>
+            INVENTOS
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link con" href="/landing" style="font-size: 25px;">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link con" href="/about" style="font-size: 25px;"> About </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link con" href="/watch" style="font-size: 25px;"> Our Lockers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link con" href="/contact" style="font-size: 25px;">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link con" href="/login_form" style="font-size: 25px;">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link con" href="/register_form" style="font-size: 25px;">register</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="slider_item-box">
+              <div class="slider_item-container">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="slider_img-box">
+                        <div>
+                          <img src="{% static 'landing/images/watch.png' %}" alt="" class="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <div class="slider_item-detail">
+                        <div>
+                          <h1 class="hed">
+                            LOCKS & SECURITY
+                          </h1>
+                          <br>
+                          <div>
+                          <h3 class="hed">
+                            To build effective security solutions,<br>
+                            we work closely with key influencers like carpenters,<br> and interior designers,using their insights <br>to align our offerings to your shifting security needs.
+                          </h3>
+                          </div>
+                          <br>
+                          <br>
+                          <div class="d-flex">
+                            <a href="" class="slider-btn1 mr-3">
+                              Read More
+                            </a>
+                            <a href="/contact" class="slider-btn2">
+                              Contact Us
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slider_item-box">
+              <div class="slider_item-container">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="slider_img-box">
+                        <div>
+                          <img src="{% static 'landing/images/lock 3.png' %}" alt="" class="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <div class="slider_item-detail">
+                        <div>
+                          <h1 class="hed">
+                            LOCKS & SECURITY
+                          </h1>
+                          <br>
+                          <div>
+                          <h3 class="hed">
+                            To build effective security solutions,<br>
+                            we work closely with key influencers like carpenters,<br> and interior designers,using their insights <br>to align our offerings to your shifting security needs.
+                          </h3>
+                          </div>
+                          <br>
+                          <br>
+                          <div class="d-flex">
+                            <a href="" class="slider-btn1 mr-3">
+                              Read More
+                            </a>
+                            <a href="/contact" class="slider-btn2">
+                              Contact Us
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slider_item-box">
+              <div class="slider_item-container">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="slider_img-box">
+                        <div>
+                          <img src="{% static 'landing/images/lock 2.jpeg' %}" alt="" class="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <div class="slider_item-detail">
+                        <div>
+                          <h1 class="hed">
+                            LOCKS & SECURITY
+                          </h1>
+                          <br>
+                          <div>
+                          <h3 class="hed">
+                            To build effective security solutions,<br>
+                            we work closely with key influencers like carpenters,<br> and interior designers,using their insights <br>to align our offerings to your shifting security needs.
+                          </h3>
+                          </div>
+                          <br>
+                          <br>
+                          <div class="d-flex">
+                            <a href="" class="slider-btn1 mr-3">
+                              Read More
+                            </a>
+                            <a href="/contact" class="slider-btn2">
+                              Contact Us
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="custom_carousel-control">
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+  <div class="bg">
+
+    <!-- about section -->
+    <section class="about_section layout_padding">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5 offset-md-2">
+            <div class="about_detail-box">
+              <h1 class="custom_heading con ">
+                About Us
+              </h1>
+              <p class="detail_text">
+                The company engages with millions of consumers and businesses across the world by building effective and efficient household appliances, providing solutions for security, storage as well as interiors with an attention to detail and service that are eponymous with trust and quality. The company is present in every corner of India, fulfilling aspirations of customers and helping them lead secure and fulfilled lives.
+              </p>
+              <div>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="about_img-box">
+              <img src="{% static 'landing/images/about.png' %}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- end about section -->
+
+    <!-- brand section -->
+
+    <section class="brand_section layout_padding2">
+      <div class="container">
+        <div class="brand_heading">
+          <h2 class="custom_heading con">
+            Our Lockers
+          </h2>
+        </div>
+      </div>
+      <div class="container-fluid brand_item-container">
+        <div class="brand_item-box">
+          <div class="brand_img-box  item-1">
+            <a href="">
+              View More
+            </a>
+          </div>
+          <div class="brand_detail-box">
+            <h5>
+              $<span> 40 </span>
+            </h5>
+            <h6 class="">
+              Door Locks
+            </h6>
+          </div>
+        </div>
+        <div class="brand_item-box">
+          <div class="brand_img-box  item-2">
+            <a href="">
+              View More
+            </a>
+          </div>
+          <div class="brand_detail-box">
+            <h5>
+              $<span> 50 </span>
+            </h5>
+            <h6 class="">
+              Institutional Security
+            </h6>
+          </div>
+        </div>
+        <div class="brand_item-box">
+          <div class="brand_img-box  item-3">
+            <a href="">
+              View More
+            </a>
+          </div>
+          <div class="brand_detail-box">
+            <h5>
+              $<span> 60 </span>
+            </h5>
+            <h6 class="">
+              Card Sensor
+            </h6>
+          </div>
+        </div>
+        <div class="brand_item-box">
+          <div class="brand_img-box  item-4">
+            <a href="">
+              View More
+            </a>
+          </div>
+          <div class="brand_detail-box">
+            <h5>
+              $<span> 70 </span>
+            </h5>
+            <h6 class="">
+              FingerPrint Sensor Locks
+            </h6>
+          </div>
+        </div>
+        <div class="brand_item-box">
+          <div class="brand_img-box  item-5">
+            <a href="">
+              View More
+            </a>
+          </div>
+          <div class="brand_detail-box">
+            <h5>
+              $<span> 80 </span>
+            </h5>
+            <h6 class="">
+              Personnal locks
+            </h6>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- end brand section -->
+
+    <!-- why section -->
+    <section class="why_section layout_padding">
+      <div class="container">
+        <h1 class="custom_heading con">
+          Why choose Us
+        </h1>
+        
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="img_box">
+              <img src="{% static 'landing/images/feature-1.png' %}" alt="">
+            </div>
+            <div class="detail_box">
+              <h5>
+                Fast Delivery
+              </h5>
+              <p>
+                Our service provider will supply locks within 24 hours
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img_box">
+              <img src="{% static 'landing/images/feature-2.png' %}" alt="">
+            </div>
+            <div class="detail_box">
+              <h5>
+                Free Shiping
+              </h5>
+              <p>
+                No shipping charges for locks across international delivery
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img_box">
+              <img src="{% static 'landing/images/feature-3.png' %}" alt="">
+            </div>
+            <div class="detail_box">
+              <h5>
+                Best Quality
+              </h5>
+              <p>
+                Our locks are Ranked as no one product in the market.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img_box">
+              <img src="{% static 'landing/images/feature-4.png' %}" alt="">
+            </div>
+            <div class="detail_box">
+              <h5>
+                24x7 Customer support
+              </h5>
+              <p>
+                If installation of locks required we are available 24/7 for service. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- end why section -->
+  </div>
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding-bottom">
+    <div class="container">
+      <h1 class="custom_heading con">
+        Testimonial
+      </h1>
+      
+    </div>
+    <div class="container"></div>
+    <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="detail_box">
+                  <div class="img_box">
+                    <img src="{% static 'landing/images/client.jpg' %}" alt="">
+                  </div>
+                  <div class="name_box">
+                    <h5>
+                      Sandy Den
+                    </h5>
+                    <h6>
+                      Many Variations
+                    </h6>
+                  </div>
+                </div>
+                <div class="detail_text">
+                  <p>Our comprehensive range of safety solutions encompasses the very best in-home security, from the iconic Nav-Tal lock to cutting edge digital and biometric safety solutions. Our state-of-the-art innovation centre and collaborations with leading global industrial and interior designers helps us stay ahead of the curve on safety. We are proud to have the highest number of patents in the industry.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="detail_box">
+                  <div class="img_box">
+                    <img src="{% static 'landing/images/client.jpg' %}" alt="">
+                  </div>
+                  <div class="name_box">
+                    <h5>
+                      Sandy Den
+                    </h5>
+                    <h6>
+                      Many Variations
+                    </h6>
+                  </div>
+                </div>
+                <div class="detail_text">
+                  <p>Our comprehensive range of safety solutions encompasses the very best in-home security, from the iconic Nav-Tal lock to cutting edge digital and biometric safety solutions. Our state-of-the-art innovation centre and collaborations with leading global industrial and interior designers helps us stay ahead of the curve on safety. We are proud to have the highest number of patents in the industry.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="detail_box">
+                  <div class="img_box">
+                    <img src="{% static 'landing/images/client.jpg' %}" alt="">
+                  </div>
+                  <div class="name_box">
+                    <h5>
+                      Sandy Den
+                    </h5>
+                    <h6>
+                      Many Variations
+                    </h6>
+                  </div>
+                </div>
+                <div class="detail_text">
+                  <p>Our comprehensive range of safety solutions encompasses the very best in-home security, from the iconic Nav-Tal lock to cutting edge digital and biometric safety solutions. Our state-of-the-art innovation centre and collaborations with leading global industrial and interior designers helps us stay ahead of the curve on safety. We are proud to have the highest number of patents in the industry.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev">
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExample2Controls" role="button" data-slide="next">
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    </div>
+  </section>
+
+
+  <!-- end client section -->
+
+  <!-- contact section -->
+
+  <section class="contact_section layout_padding">
+    <h2 class="custom_heading text-center">
+      CONTACT US
+    </h2>
+    <div class="container mt-5 pt-5">
+      <form action="">
+        <div>
+          <input type="text" placeholder="NAME">
+        </div>
+        <div>
+          <input type="email" placeholder="EMAIL">
+        </div>
+        <div>
+          <input type="text" placeholder="PHONE NUMBER">
+        </div>
+        <div>
+          <input type="text" class="message-box" placeholder="MESSAGE">
+        </div>
+        <div class="d-flex justify-content-center mt-5 pt-5">
+          <button>
+            SEND
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+  <!-- info section -->
+  <section class="info_section layout_padding">
+    <div class="container">
+      <div class="info_items">
+        <a href="">
+          <div class="item ">
+            <div class="img-box box-1">
+              <img src=" " alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                Location
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="item ">
+            <div class="img-box box-2">
+              <img src=" " alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                +02 1234567890
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="item ">
+            <div class="img-box box-3">
+              <img src=" " alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                inventos@gmail.com
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- end info_section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      © 2020 All Rights Reserved By INVENTOS
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="{% static 'landing/js/jquery-3.4.1.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'landing/js/bootstrap.js' %}"></script>
+</body>
+
+</html>
